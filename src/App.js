@@ -1,23 +1,24 @@
-
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Features from "./components/Features/Features";
+import Downloads from "./components/Download/Downloads";
+import Faqs from "./components/Faqs/Faqs";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="font-serif">
-      <header>
-      <nav className="container flex items-center py-4 mt-4 sm:mt-12">
-        <div className="py-1">
-          {/* <img src="./imgs/logo-bookmark.svg" alt="" /> */}
-          </div>
-        <ul className="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs">
-          <li className="cursor-pointer">Features</li>
-          <li className="cursor-pointer">Pricing</li>
-          <li className="cursor-pointer">Contact</li>
-          <button type="button" className="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase">Login</button>
-        </ul>
-        <div className="flex sm:hidden flex-1 justify-end">
-          <i className="text-2xl fas fa-bars"></i>
-        </div>
-      </nav>
-    </header>
+      <Header></Header>
+      <Hero
+        title="A Simple Bookmark Manager"
+        subtitle="A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites
+        load instantly. Try it for free."
+      ></Hero>
+      <Features></Features>
+      <Downloads></Downloads>
+      <Faqs></Faqs>
+      <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 }

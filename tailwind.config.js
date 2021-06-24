@@ -14,12 +14,15 @@ module.exports = {
     fontFamily: {
       'sans': ["Poppins, sans-serif"],
     },
+    listStyleType: {
+      none: 'none',
+    },
     container: {
       center: true,
       padding: "1rem",
       screens: {
         lg: "1124px",
-        xl: "1124px",
+        xl: "1324px",
         "2xl": "1124px",
       },
     },

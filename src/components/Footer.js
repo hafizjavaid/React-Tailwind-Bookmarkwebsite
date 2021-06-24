@@ -1,0 +1,28 @@
+import React from "react";
+import footerimg from '../assets/logo-bookmark-white.png'
+const Footer = () => {
+  return (
+    <footer className="bg-bookmark-blue py-8">
+      <div className="container flex flex-col md:flex-row items-center">
+        <div className="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
+          <img src={footerimg} alt="" />
+          <ul className="flex text-white uppercase gap-12 text-xs list-none">
+            <li className="cursor-pointer list-none">Features</li>
+            <li className="cursor-pointer list-none">Pricing</li>
+            <li className="cursor-pointer list-none">Contact</li>
+          </ul>
+        </div>
+        <ul className="flex gap-10 mt-12 md:mt-0 list-none">
+          <li>
+            <i className="text-white text-2xl fab fa-twitter"></i>
+          </li>
+          <li>
+            <i className="text-white text-2xl fab fa-facebook-square"></i>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
